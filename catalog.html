@@ -9,7 +9,7 @@
   <header>
   <nav>
     <a href="index.html">
-    <img src="img/index-logo.png" width="140" height="71" alt="Логотип города Седона">
+    <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона">
     </a>
     <ul>
       <li><a href="info.html">Информация</a></li>
@@ -31,7 +31,7 @@
         <form action="#" method="#">
         <fieldset>
             <legend>Инфраструктура:</legend>
-            <input type="checkbox" name="pool" id="pool">
+            <input type="checkbox" name="pool" id="pool" checked>
             <label for="pool">Бассейн</label>
             <input type="checkbox" name="parking" id="parking">
             <label for="parking">Парковка</label>
@@ -40,16 +40,16 @@
         </fieldset>
         <fieldset>
             <legend>Тип жилья:</legend>
-            <input type="checkbox" name="hotel" id="hotel">
+            <input type="checkbox" name="hotel" id="hotel" checked>
             <label for="hotel">Гостиница</label>
-            <input type="checkbox" name="motel" id="motel">
+            <input type="checkbox" name="motel" id="motel" checked>
             <label for="motel">Мотель</label>
-            <input type="checkbox" name="apartments" id="apartments">
+            <input type="checkbox" name="apartments" id="apartments" checked>
             <label for="apartments">Апартаменты</label>
         </fieldset>
         <fieldset>
             <legend>Стоимость в сутки (Р):</legend>
-         
+             От 0<input type="range" id="costperday" name="costperday" min="0" max="3000" step="500">До 3000
             <button type="submit">Показать</button>
         </fieldset>
         </form>
@@ -65,43 +65,43 @@
             <li><a href="#">по типу</a></li>
             <li><a href="#">по рейтингу</a></li>
         </ul>
-    </section>
-<!--стрелки ?-->
+      </section>
+<!--стрелки -->
     <div>
-      <button>up</button>
+      <input type="image" src="img/icon-up-dir.svg" alt="Up">
     </div>
     <div>
-      <button>down</button>
+      <input type="image" src="img/icon-down-dir.svg" alt="Down">
     </div>
-<!--стрелки ?-->
+<!--стрелки -->
     <section>
     <article>
-      <img src="img/hotel_1.jpg" width="135" height="90" alt="Фото Amara Resort & Spa">
+      <img src="img/hotel-amara.jpg" width="135" height="90" alt="Фото Amara Resort & Spa">
       <h3>Amara Resort & Spa</h3>
       <p>Гостинница </p>
       <p>от 4000 р.</p>
       <p>Рейтинг 8,5</p>
-      <!--рейтинг гостиницы-->
+      <!--рейтинг гостиницы?-->
       <a href="#">Подробнее</a>
       <a href="#">Забронировать</a>
     </article>
     <article>
-      <img src="img/hotel_2.jpg" width="135" height="90" alt="Фото Desrt Quail Inn">
+      <img src="img/hotel-desert.jpg" width="135" height="90" alt="Фото Desrt Quail Inn">
       <h3>Desrt Quail Inn</h3>
       <p>Мотель </p>
       <p>от 3000 р.</p>
       <p>Рейтинг 8,9</p>
-      <!--рейтинг гостиницы-->
+      <!--рейтинг гостиницы?-->
       <a href="#">Подробнее</a>
       <a href="#">Забронировать</a>
     </article>
     <article>
-      <img src="img/hotel_3.jpg" width="135" height="90" alt="Фото Villas At Poco Diablo">
+      <img src="img/hotel-villas.jpg" width="135" height="90" alt="Фото Villas At Poco Diablo">
       <h3>Villas At Poco Diablo</h3>
       <p>Апартаменты </p>
       <p>от 2000 р.</p>
       <p>Рейтинг 9,2</p>
-      <!--рейтинг гостиницы-->
+      <!--рейтинг гостиницы?-->
       <a href="#">Подробнее</a>
       <a href="#">Забронировать</a>
     </article>
@@ -126,7 +126,7 @@
         <p>
          Website by
         <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmla.png" width="115" height="41" alt="Логотип HTML Academy">
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
         </a>
         </p>
     </footer>
