@@ -17,7 +17,7 @@
       <li><a href="info.html">Информация</a></li>
       <li><a href="galery.html">Фото и Видео</a></li>
       <li><a href="map.html">Карта штата</a></li>
-      <li>Гостиницы</li>
+      <li><a>Гостиницы</a></li>
     </ul>
 
   </nav>
@@ -29,7 +29,7 @@
 <!-- фильтр выбора отелей -->
   <section>
     <h2>Фильтр по отелям</h2>
-    <form action="#" method="#">
+    <form action="#" method="post">
       <fieldset>
         <legend>Инфраструктура:</legend>
         <input type="checkbox" name="pool" id="pool" checked>
@@ -48,11 +48,16 @@
         <input type="checkbox" name="apartments" id="apartments" checked>
         <label for="apartments">Апартаменты</label>
       </fieldset>
-      <fieldset>
-        <legend>Стоимость в сутки (Р):</legend>
-        От 0<input type="range" id="costperday" name="costperday" min="0" max="3000" step="500">До 3000
-      </fieldset>
-      <button type="submit">Показать</button>
+      <div>
+        <fieldset> <!--сделать 2 бегунка-->
+          <legend>Стоимость в сутки (Р):</legend>
+          <label for="coststart">От 0</label>
+          <input type="text" id="coststart" name="coststart" min="0"  step="100">
+          <label for="coststop">До 3000</label>
+          <input type="text" id="coststop" name="coststop" max="3000"  step="100">
+        </fieldset>
+        <button type="submit">Показать</button>
+      </div>
     </form>
   </section>
 
@@ -62,14 +67,16 @@
     <h2>Найдено: 3</h2>
     <h3>Сортировка:</h3>
       <ul>
-        <li>по цене</li>
+        <li><a>по цене</a></li> <!--сделать класс active-->
         <li><a href="#">по типу</a></li>
         <li><a href="#">по рейтингу</a></li>
-    </ul>
+      </ul>
   </section>
 <!--стрелки -->
-  <a><img src="img/icon-up-dir.svg" alt="Up"></a>
-  <a><img src="img/icon-down-dir.svg" alt="Down"></a>
+  <section>
+    <a href="#" class="sortup">Сортировка по возрастанию</a>
+    <a href="#" class="sortdown">Сортировка по убыванию</a>
+  </section>
 <!--/стрелки -->
   <section>
     <article>
@@ -78,7 +85,7 @@
       <p>Гостинница </p>
       <p>от 4000 р.</p>
       <p>Рейтинг 8,5</p>
-      <!--рейтинг гостиницы?-->
+      <!--рейтинг гостиницы? <span class="#">Отель 4 звезды</span>-->
       <a href="#">Подробнее</a>
       <a href="#">Забронировать</a>
     </article>
@@ -112,9 +119,9 @@
   <p>Тел: +7(495) 666-02-66</p>
 
   <ul>
-    <li><a href="https://twitter.com/"><img src="img/twitter.svg"></a></li>
-    <li><a href="https://www.facebook.com/"><img src="img/facebook.svg"></a></li>
-    <li><a href="https://www.youtube.com/"><img src="img/youtube.svg"></a></li>
+    <li><a href="https://twitter.com/" class="Twitter">Twitter</a></li>
+    <li><a href="https://www.facebook.com/" class="Facebook">Facebook</a></li>
+    <li><a href="https://www.youtube.com/" class="youtube">Youtube</a></li>
   </ul>
 
 
