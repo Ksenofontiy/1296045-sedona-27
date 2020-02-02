@@ -2,18 +2,18 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>HTML Academy: Седона</title>
+  <title>Седона: Отели</title>
 </head>
 
 <body>
 <!--Шапка страницы-->
-<header>
+<header class="page-header">
   <nav>
     <a href="index.html">
       <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона">
     </a>
 
-    <ul>
+    <ul class="navi">
       <li><a href="info.html">Информация</a></li>
       <li><a href="galery.html">Фото и Видео</a></li>
       <li><a href="map.html">Карта штата</a></li>
@@ -27,7 +27,7 @@
 <!--Основное содержимое-->
 <main>
 <!-- фильтр выбора отелей -->
-  <section>
+  <section class="feature-filter-hotels">
     <h2 class="visually-hidden">Фильтр по отелям</h2>
     <form action="#" method="post">
       <fieldset>
@@ -63,23 +63,23 @@
 
 <!-- /фильтр выбора отелей -->
 
-  <section>
+  <section class="feature-results">
     <h2>Найдено: 3</h2>
     <h3>Сортировка:</h3>
-      <ul>
+      <ul class="feature-filter">
         <li><a>по цене</a></li> <!--сделать класс active-->
         <li><a href="#">по типу</a></li>
         <li><a href="#">по рейтингу</a></li>
       </ul>
   </section>
 <!--стрелки -->
-  <section>
+  <section class="feature-sort">
     <a href="#" class="sortup">Сортировка по возрастанию</a>
     <a href="#" class="sortdown">Сортировка по убыванию</a>
   </section>
 <!--/стрелки -->
-  <section>
-    <article>
+  <section class="hotel-results">
+    <article class="hotel-one">
       <img src="img/hotel-amara.jpg" width="135" height="90" alt="Фото Amara Resort & Spa">
       <h3>Amara Resort & Spa</h3>
       <p>Гостинница </p>
@@ -89,7 +89,7 @@
       <a href="#">Подробнее</a>
       <a href="#">Забронировать</a>
     </article>
-    <article>
+    <article class="hotel-two">
       <img src="img/hotel-desert.jpg" width="135" height="90" alt="Фото Desrt Quail Inn">
       <h3>Desrt Quail Inn</h3>
       <p>Мотель </p>
@@ -99,7 +99,7 @@
       <a href="#">Подробнее</a>
       <a href="#">Забронировать</a>
     </article>
-    <article>
+    <article class="hotel three">
       <img src="img/hotel-villas.jpg" width="135" height="90" alt="Фото Villas At Poco Diablo">
       <h3>Villas At Poco Diablo</h3>
       <p>Апартаменты </p>
@@ -113,19 +113,19 @@
 
 </main>
 <!--подвал станицы-->
-<footer>
+<footer class="page-footer">
 
   <p>#VISITSEDONA</p>
   <p>Тел: +7(495) 666-02-66</p>
 
-  <ul>
+  <ul class="social-networks">
     <li><a href="https://twitter.com/" class="Twitter">Twitter</a></li>
     <li><a href="https://www.facebook.com/" class="Facebook">Facebook</a></li>
     <li><a href="https://www.youtube.com/" class="youtube">Youtube</a></li>
   </ul>
 
 
-  <p>
+  <p class="copyright">
     Website by
     <a href="https://htmlacademy.ru/intensive/htmlcss">
     <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
