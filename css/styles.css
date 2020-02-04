@@ -1,3 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: url(../img/background-photo.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+}
+
+.main-navigation,
+.navi {
+  list-style: none;
+}
+
+.main-navigation a,
+.navi a {
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.main-navigation a:hover,
+.main-navigation a:focus,
+.navi a:hover,
+.navi a:focus {
+background-color: #81b3d2;
+color: #ffffff;
+}
+
+.description h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.description p {
+  font-size: 14px;
+  line-height: 26px;
+  color: #333333;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+
+.index-true {
+  color: #ffffff;
+  background-color: #81b3d2;
+  background-position: 0 0;
+  background-repeat: repeat;
+  width: 400px;
+  height: 256px;
+  text-align: center;
+}
+
+.true-city {
+  text-align: center;
+}
+
+.true-city h3 {
+  font-size: 21px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
