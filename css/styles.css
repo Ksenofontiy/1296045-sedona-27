@@ -1,7 +1,5 @@
 /* Базовые стили*/
 body {
-  margin: 0;
-  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -22,22 +20,24 @@ body {
   margin: -1px;
 }
 
-main {
-  text-align: center;
+.wrap {
+ width: 1200px;
+ margin-left: auto;
+ margin-right: auto;
+ box-shadow: 0 0 10px;
+
 }
 
 /* Шапка страницы */
 .main-navigation a {
-  font-size: 14px;
-  line-height: 26px;
   font-weight: bold;
   color: #000000;
   text-decoration: none;
   width: 239px;
-  height: 56px;
+
 }
 
-.main-navigation,
+
 .site-navigation {
   list-style: none;
   display: flex;
@@ -64,19 +64,19 @@ main {
 .description h2 {
   font-size: 21px;
   line-height: 26px;
-  
+
 }
 
 .description p {
   font-size: 14px;
   line-height: 26px;
   color: #333333;
-  
+
 }
 
 ul {
   list-style: none;
-  
+
 }
 
 .index-true {
@@ -86,7 +86,7 @@ ul {
   background-repeat: repeat;
   width: 400px;
   height: 256px;
-  
+
 }
 
 
@@ -195,11 +195,11 @@ li h3 {
     font-weight: bold;
     color: #ffffff;
     }
-  
+
   .blue-search-button:focus {
     background-color: #669ec0;
     }
-  
+
   .blue-search-button:active {
     background-color: #5496bd;
     color: rgba(255, 255, 255, 0.3);
@@ -211,8 +211,6 @@ li h3 {
 /*Подвал*/
   .page-footer {
     background-color: rgba(225, 225, 225, 0.9);
-    width: 1200px;
-    height: 120px;
   }
 
 .page-footer p {
