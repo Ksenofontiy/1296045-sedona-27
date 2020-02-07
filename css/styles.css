@@ -1,3 +1,4 @@
+/* Базовые стили*/
 body {
   margin: 0;
   padding: 0;
@@ -13,23 +14,38 @@ body {
   background-repeat: no-repeat;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+main {
+  text-align: center;
+}
+
 /* Шапка страницы */
 .main-navigation a {
   font-size: 14px;
   line-height: 26px;
+  font-weight: bold;
   color: #000000;
   text-decoration: none;
+  width: 239px;
+  height: 56px;
 }
 
 .main-navigation,
-.navi {
+.site-navigation {
   list-style: none;
   display: flex;
   justify-content: center;
 }
 
 .main-navigation a,
-.navi a {
+.site-navigation a {
   color:#000000;
   background-color: #ffffff;
   list-style: none;
@@ -39,8 +55,8 @@ body {
 
 .main-navigation a:hover,
 .main-navigation a:focus,
-.navi a:hover,
-.navi a:focus {
+.site-navigation a:hover,
+.site-navigation a:focus {
   background-color: #81b3d2;
   color: #ffffff;
 }
@@ -48,19 +64,19 @@ body {
 .description h2 {
   font-size: 21px;
   line-height: 26px;
-  text-align: center;
+  
 }
 
 .description p {
   font-size: 14px;
   line-height: 26px;
   color: #333333;
-  text-align: center;
+  
 }
 
 ul {
   list-style: none;
-  text-align: center;
+  
 }
 
 .index-true {
@@ -70,12 +86,10 @@ ul {
   background-repeat: repeat;
   width: 400px;
   height: 256px;
-  text-align: center;
+  
 }
 
-.true-city {
-  text-align: center;
-}
+
 
 li h3 {
   font-size: 21px;
@@ -90,12 +104,7 @@ li h3 {
   background-repeat: repeat;
   width: 400px;
   height: 256px;
-  text-align: center;
   padding-top: 50px;
-}
-/*форма*/
-.interested {
-   text-align: center;
 }
 
 
@@ -110,7 +119,50 @@ li h3 {
   line-height: 24px;
   color: #333333;
 }
-/*Кнопка*/
+/*Попап форма поиска гостиницы*/
+.search-hotels {
+  width: 568px;
+  height: 395px;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-position: center;
+  font-size: 14px;
+  font-weight: bold; /*выровнять по центру?*/
+}
+
+.search-hotels label,
+.search-hotels input[type="date"],
+.search-hotels input[type="number"] {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  line-height: 26px;
+}
+
+.search-hotels input[type="date"],
+.search-hotels input[type="number"] {
+  width: 346px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  /*вставить иконку календаря*/
+}
+
+.search-hotels input[type="number"] {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+  /*вставить иконку календаря*/
+}
+
+.search-hotels button[type="button"] {
+  width: 38px;
+  height: 38px;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+/*Кнопка поиск гостиницы*/
 .search-button {
   width: 568px;
   height: 86px;
@@ -120,16 +172,42 @@ li h3 {
   font-size: 21px;
   font-weight: bold;
   color: #ffffff;
+}
+
+.search-button:focus {
+  background-color: #604e43;
   }
 
-  .search-button:hover,
-  .search-button:focus {
-    background-color: #604e43;
+.search-button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
   }
 
-  .search-button:active {
-    background-color: #503e33;
-  }
+
+  /*Кнопка Найти*/
+  .blue-search-button {
+    width: 458px;
+    height: 58px;
+    background: #81b3d2;
+    border: none;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    }
+  
+  .blue-search-button:focus {
+    background-color: #669ec0;
+    }
+  
+  .blue-search-button:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+    }
+
+
+
+
 /*Подвал*/
   .page-footer {
     background-color: rgba(225, 225, 225, 0.9);
@@ -142,22 +220,39 @@ li h3 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  text-align: left;
-  
-
 }
 
+.page-footer p:last-child {
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.social-networks {
+  display: flex;
+}
+
+.social-networks li {
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
 
 .twitter {
   background-image: url("../img/twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .facebook {
   background-image: url("../img/facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .youtube {
   background-image: url("../img/youtube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 
@@ -182,10 +277,3 @@ li h3 {
 
 
 
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
