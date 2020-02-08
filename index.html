@@ -12,7 +12,7 @@
 <div class="wrapper">
 <header class="page-header">
   <nav class="main-navigation">
-    <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона" style="position: absolute; left: 50%;top: 0;z-index: 11;margin-left: -70px;">
+    <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона"  class="logo-image">
     <ul class="site-navigation list-style-none">
       <li><a href="info.html">Информация</a></li>
       <li><a href="galery.html">Фото и Видео</a></li>
@@ -20,7 +20,8 @@
       <li><a href="catalog.html">Гостиницы</a></li>
     </ul>
   </nav>
-  <img src="img/welcome.png" width="459" height="353" alt="Изображение Добро пожаловать">
+  <img src="img/welcome.png" width="459" height="353" alt="Изображение Добро пожаловать" class="welcome-image">
+  <img src="img/polygon.png" width="100%" alt="poligon" class="polygon-image">
 </header>
 <!--/Шапка страницы-->
 
@@ -40,7 +41,7 @@
         <span> — №1 — </span>
         <p>Седона — не аттракцион для туристов,там течёт своя жизнь</p>
       </div>
-        <img src="img/feature-picture-1.jpg" width="800" height="256" alt="фотография Седоны">
+        <img src="img/feature-picture.png" width="800" height="256" alt="фотография Седоны" >
       </li>
         <ul class="additional list-style-none">
           <li class="accommodation">
@@ -62,33 +63,35 @@
           </li>
         </ul>
       <li class="bridge">
+        <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Слой 5">
         <div class="index-true">
           <h3>Там есть<br>
             Мост дьявола
           </h3>
           <span> — №2 — </span>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь </p>
-          <img src="img/feature-picture-2.jpg" width="800" height="256" alt="Слой 5">
         </div>
       </li>
 
-      <li class="area">
-        <h3>Небольшая площадь</h3>
-        <span> — №3 — </span>
-        <p>Все достопримечательности находятся очень близко</p>
-      </li>
+      <ul class="additional list-style-none">
+        <li class="area">
+          <h3>Небольшая площадь</h3>
+          <span> — №3 — </span>
+          <p>Все достопримечательности находятся очень близко</p>
+        </li>
 
-      <li class="road">
-        <h3>Красивая дорога</h3>
-        <span> — №4 — </span>
-        <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-      </li>
+        <li class="road">
+          <h3>Красивая дорога</h3>
+          <span> — №4 — </span>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </li>
 
-      <li class="tourists">
-        <h3>Мало Туристов</h3>
-        <span> — №5 — </span>
-        <p>Большинство едет в гранд каньон и толпится там</p>
-      </li>
+        <li class="tourists">
+          <h3>Мало Туристов</h3>
+          <span> — №5 — </span>
+          <p>Большинство едет в гранд каньон и толпится там</p>
+        </li>
+      </ul>
 
     </ul>
   </section>
@@ -105,7 +108,7 @@
   <section class="search-hotels">
     <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
-    <form action="https://echo.htmlacademy.ru" method="POST">
+    <form action="https://echo.htmlacademy.ru" method="POST" class="form">
       <div class="conteiner-date">
         <label for="arrival day">Дата заезда:</label>
         <input type="date" name="arrival day" id="arrival day" placeholder="24 апреля 2017"/>
@@ -116,17 +119,19 @@
         <input type="date" name="departure day" id="departure day" placeholder="4 июля 2017"/>
         <button type="button">Календарь</button>
       </div>
-      <div class="container-adults">
-        <label for="adults">Взрослые:</label>
-        <button type="button">-</button>
-        <input type="number" name="adults" id="adults" value="2" min="1" max="5" step="1"/>
-        <button type="button">+</button>
-      </div>
-      <div class="container-kids">
-        <label for="kids">Дети:</label>
-        <button type="button">-</button>
-        <input type="number" name="kids" id="kids" value="0" min="0" max="5" step="1"/>
-        <button type="button">+</button>
+      <div class="row">
+        <div class="container-adults">
+          <label for="adults">Взрослые:</label>
+          <button type="button">-</button>
+          <input type="number" name="adults" id="adults" value="2" min="1" max="5" step="1"/>
+          <button type="button">+</button>
+        </div>
+        <div class="container-kids">
+          <label for="kids">Дети:</label>
+          <button type="button">-</button>
+          <input type="number" name="kids" id="kids" value="0" min="0" max="5" step="1"/>
+          <button type="button">+</button>
+        </div>
       </div>
       <button type="submit" class="blue-search-button">Найти</button>
     </form>
