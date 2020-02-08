@@ -7,10 +7,12 @@ body {
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
-  background-image: url(../img/background-photo.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
 }
+/*помощь в разметке*/
+* {
+  outline: 1px solid orange;
+}
+/*помощь в разметке*/
 
 .visually-hidden {
   position: absolute;
@@ -20,37 +22,52 @@ body {
   margin: -1px;
 }
 
-.wrap {
+.list-style-none li {
+  list-style: none;
+}
+.wrapper {
  width: 1200px;
  margin-left: auto;
  margin-right: auto;
  box-shadow: 0 0 10px;
-
 }
 
 /* Шапка страницы */
+.page-header {
+  background-color: #669ec0;
+  background-image: url(../img/background-photo.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+
+}
+
+.main-navigation  {
+  position: relative;
+  background-color: #ffffff;
+  padding-bottom: 20px;
+}
+
 .main-navigation a {
   font-weight: bold;
   color: #000000;
   text-decoration: none;
   width: 239px;
-
 }
-
 
 .site-navigation {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-left: 0;
+
 }
 
-.main-navigation a,
 .site-navigation a {
   color:#000000;
   background-color: #ffffff;
-  list-style: none;
-  display: flex;
-  justify-content: center;
+
 }
 
 .main-navigation a:hover,
@@ -61,6 +78,9 @@ body {
   color: #ffffff;
 }
 /* основное содержимое*/
+.page-index {
+  text-align: center;
+}
 .description h2 {
   font-size: 21px;
   line-height: 26px;
@@ -74,8 +94,12 @@ body {
 
 }
 
-ul {
+.advantages ul{
   list-style: none;
+  display: flex;
+  width: 400px;
+  padding-left: 0;
+
 
 }
 
@@ -85,7 +109,7 @@ ul {
   background-position: 0 0;
   background-repeat: repeat;
   width: 400px;
-  height: 256px;
+
 
 }
 
@@ -103,8 +127,9 @@ li h3 {
   background-position: 0 0;
   background-repeat: repeat;
   width: 400px;
-  height: 256px;
-  padding-top: 50px;
+  padding-bottom: 30px;
+  padding-top:  10px;
+
 }
 
 
@@ -141,7 +166,6 @@ li h3 {
 .search-hotels input[type="date"],
 .search-hotels input[type="number"] {
   width: 346px;
-  height: 38px;
   background-color: #f2f2f2;
   border: none;
   /*вставить иконку календаря*/
