@@ -312,6 +312,7 @@ li h3 {
 
 .social-networks {
   display: flex;
+  justify-content: space-between;
 
 }
 
@@ -371,12 +372,28 @@ display: flex;
    text-decoration: none;
    color: black;
  }
-
+*/
  .page-header-hotels {
-  background-color: #669ec0;
-  background-image: url(../img/filter-background.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
-  position: relative;
-  text-align: center;
-  padding-bottom: 79px; */
+    background-color: #669ec0;
+    background-image: url(../img/filter-background.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    padding-bottom: 562px;
+  }
+
+  .feature-filter-hotels {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+   justify-content: space-around;
+   padding-left: 72px;
+   border: none;
+  }
+
+
+
+
+
