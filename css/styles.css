@@ -292,28 +292,34 @@ li h3 {
 /*Подвал*/
   .page-footer {
     background-color: rgba(225, 225, 225, 0.9);
+    margin-top: 78px;
   }
 
-.page-footer p {
+.contacts p {
   text-transform: uppercase;
   font-size: 21px;
+  font-weight: bold;
   line-height: 26px;
   color: #000000;
 }
 
-.page-footer p:last-child {
+.copyright p {
   font-size: 14px;
   vertical-align: middle;
+  font-weight: normal;
+  box-shadow: 0px 5px 15px 0 var(--dark-forest-green-20);
 }
 
 .social-networks {
   display: flex;
+
 }
 
 .social-networks li {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
+  align-items: center;
 }
 
 .twitter {
@@ -334,25 +340,43 @@ li h3 {
   background-position: center;
 }
 
+.page-footer .conteiner {
+display: flex;
+}
 
+.contacts {
+  margin: 0;
+  min-height: 120px;
+  width: 245px;
+  margin-left: 136px;
+}
 
+.social-networks {
+ margin: 0;
+ min-height: 120px;
+ width: 223px;
+ margin-left: 100px;
+}
 
+.copyright {
+  margin: 0;
+  min-height: 120px;
+  width: 223px;
+  margin-left: 180px;
+ }
 
+ /* страница отелей */
 
+ /* body a{
+   text-decoration: none;
+   color: black;
+ }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ .page-header-hotels {
+  background-color: #669ec0;
+  background-image: url(../img/filter-background.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  position: relative;
+  text-align: center;
+  padding-bottom: 79px; */
