@@ -32,7 +32,7 @@
         <form action="https://echo.htmlacademy.ru" method="post">
         <div class="infrastrukture">
           <fieldset>
-            <legend>Инфраструктура:</legend>
+            <legend class="filter-title">Инфраструктура:</legend>
             <input type="checkbox" name="pool" id="pool" checked>
             <label for="pool">Бассейн</label>
             <input type="checkbox" name="parking" id="parking">
@@ -43,7 +43,7 @@
         </div>
         <div class="housing">
           <fieldset>
-            <legend>Тип жилья:</legend>
+            <legend class="filter-title">Тип жилья:</legend>
             <input type="checkbox" name="hotel" id="hotel" checked>
             <label for="hotel">Гостиница</label>
             <input type="checkbox" name="motel" id="motel" checked>
@@ -52,16 +52,20 @@
             <label for="apartments">Апартаменты</label>
           </fieldset>
         </div>
-        <div class="price">
-          <fieldset> <!--сделать 2 бегунка-->
-            <legend>Стоимость в сутки (Р):</legend>
-            <label for="coststart">От 0</label>
-            <input type="text" id="coststart" name="coststart" min="0"  step="100">
-            <label for="coststop">До 3000</label>
-            <input type="text" id="coststop" name="coststop" max="3000"  step="100">
-          </fieldset>
-
-          <button type="submit">Показать</button>
+        <div class="filter-range">
+          <div class="filter-range-title">Стоимость в сутки (р):</div>
+          <div class="price-controls">
+            <label class="min-price">от <input type="number" name="min-price" value="0"></label>
+            <label class="max-price">до <input type="number" name="max-price" value="3000"></label>
+          </div>
+          <div class="range-controls">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="range-toggle range-toggle-min"></div>
+            <div class="range-toggle range-toggle-max"></div>
+          </div>
+          <button class="btn-transparent" type="submit">Показать</button>
         </div>
       </div>
       </form>
