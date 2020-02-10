@@ -295,10 +295,17 @@ li h3 {
   padding: 0 43px;
 }
 
+.interactive-map {
+  position: relative;
+}
+
 /*Подвал*/
   .page-footer {
     background-color: rgba(225, 225, 225, 0.9);
-    margin-top: 78px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
   }
 
 .contacts p {
@@ -349,27 +356,35 @@ li h3 {
 
 .page-footer .conteiner {
 display: flex;
+justify-content: space-around;
+width: 1200px;
 }
 
 .contacts {
   margin: 0;
   min-height: 120px;
-  width: 245px;
-  margin-left: 136px;
+  width: 300px;
+
 }
 
 .social-networks {
- margin: 0;
- min-height: 120px;
- width: 223px;
- margin-left: 100px;
+  margin: 0;
+  padding: 0;
+  min-height: 120px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .copyright {
   margin: 0;
   min-height: 120px;
-  width: 223px;
-  margin-left: 180px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
  }
 
  /* страница отелей */
