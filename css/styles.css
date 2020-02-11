@@ -32,6 +32,8 @@ body {
  margin-left: auto;
  margin-right: auto;
  box-shadow: 0 0 10px;
+ display: flex;
+ flex-direction: column;
 }
 
 /* Шапка страницы */
@@ -110,10 +112,17 @@ body {
 .page-index {
   text-align: center;
 }
+
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .description h2 {
   font-size: 21px;
   line-height: 26px;
-
+  width: 440px;
 }
 
 .description p {
@@ -129,7 +138,7 @@ body {
 .advantages ul{
   list-style: none;
   display: flex;
-  /* width: 400px; */
+  margin: 0;
   padding-left: 0;
 }
 
@@ -149,19 +158,82 @@ body {
   width: 400px;
 }
 
-.index-true {
+.index-true,
+.index-bridge {
   color: #ffffff;
   background-color: #81b3d2;
   background-position: 0 0;
   background-repeat: repeat;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.index-true h3 {
+  width: 140px;
+}
 
+.index-true p {
+  width: 285px;
+}
+
+.accommodation p {
+  width: 252px;
+}
+
+.food p {
+  width: 286px;
+  }
+
+.souvenir p {
+  width: 273px;
+}
+
+.index-bridge h3 {
+  width: 165px;
+}
+
+.index-bridge p {
+  width: 303px;
+}
+
+.area h3 {
+  width: 120px;
+}
+
+.area p {
+  width: 208px;
+}
+
+.road h3 {
+  width: 120px;
+}
+
+.road p {
+  width: 262px;
+}
+
+.tourists h3 {
+  width: 120px;
+}
+
+.tourists p {
+  width: 246px;
 }
 
 
 
-li h3 {
+
+
+
+
+
+
+
+
+
+li h3 {                  /*подумать с чем объединить*/
   font-size: 21px;
   line-height: 21px;
 }
@@ -173,17 +245,23 @@ li h3 {
   background-position: 0 0;
   background-repeat: repeat;
   width: 400px;
-  padding-bottom: 30px;
-  padding-top:  10px;
+  /* padding-bottom: 30px; */
+  /* padding-top:  10px; */
 
 }
 
+.interested {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .interested h2 {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   margin-top: 57px;
+  width: 434px;
 }
 
 .interested p {
@@ -191,6 +269,7 @@ li h3 {
   line-height: 24px;
   color: #333333;
   margin-bottom: 52px;
+  width: 434px;
 }
 /*Попап форма поиска гостиницы*/
 .search-hotels {
@@ -302,9 +381,7 @@ li h3 {
 /*Подвал*/
   .page-footer {
     background-color: rgba(225, 225, 225, 0.9);
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
     width: 100%;
   }
 
