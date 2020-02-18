@@ -652,6 +652,7 @@ width: 1200px;
 .feature-results {
   display: flex;
   flex-direction: row;
+  justify-content: start;
 }
 
 .feature-results h3 {
