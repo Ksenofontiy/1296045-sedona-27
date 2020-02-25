@@ -26,13 +26,14 @@ body {
 
 .list-style-none li {
   list-style: none;
+  padding: 0;
 
 }
 .wrapper {
  width: 1200px;
  margin-left: auto;
  margin-right: auto;
- box-shadow: 0 0 10px;
+ box-shadow: 0px 0px 15px 7px rgba(0, 1, 1, 0.15);
  display: flex;
  flex-direction: column;
 }
@@ -84,7 +85,24 @@ body {
   color:#000000;
   background-color: #ffffff;
   display: block;
+  margin: 0;
+
 }
+
+.site-navigation li {
+  width: 240px;
+}
+
+.site-navigation li:nth-child(2) {
+  margin-right: 50px;
+  text-align: start;
+}
+
+.site-navigation li:nth-child(3) {
+  margin-left: 50px;
+  text-align: end;
+}
+
 
 
 .main-navigation a:hover,
@@ -101,12 +119,15 @@ body {
 
 .logo-image {
   position: absolute;
-  left: 50%;top: 0;
+  left: 50%;
+  top: 0;
   z-index: 11;
   margin-left: -70px;
 }
 
-
+.site-navigation--active {
+  color: #766357;
+}
 
 /* основное содержимое*/
 .page-index {
@@ -416,15 +437,22 @@ li h3 {                  /*подумать с чем объединить*/
 
 .social-networks {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  width: 150px;
+  margin-left: -50px;
 
 }
 
-.social-networks li {
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 46px;
   height: 48px;
+  margin-bottom: 10px;
   background-color: #81b3d2;
-  align-items: center;
+  cursor: pointer;
 }
 
 .twitter {
