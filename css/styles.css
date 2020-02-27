@@ -47,7 +47,7 @@ a {
 /* Шапка страницы */
 .page-header {
   background-color: #669ec0;
-  background-image: url(../img/polygon.png),
+  background-image: url(../img/poligon.svg),
   url(../img/welcome.png),
   url(../img/background-photo.jpg);
   background-position: bottom center, 370px 132px, top center;
@@ -409,10 +409,10 @@ li h3 {                  /*подумать с чем объединить*/
 }
 
 /*Подвал*/
-  .page-footer {
-    background-color: rgba(225, 225, 225, 0.9);
+.page-footer {
+  background-color: rgba(225, 225, 225, 0.9);
 
-    width: 100%;
+  width: 100%;
   }
 
 .contacts p {
