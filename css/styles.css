@@ -28,7 +28,7 @@ body {
 .list-style-none  {
   padding: 0;
   list-style: none;
-  
+
 
 }
 
@@ -51,12 +51,13 @@ a {
   background-image: url(../img/poligon.svg),
   url(../img/welcome.png),
   url(../img/background-photo.jpg);
-  background-position: bottom center, 370px 132px, top center;
+  background-position: bottom center, 370px 132px, right 100% top -20px;
   background-repeat: no-repeat;
   position: relative;
   text-align: center;
-  min-height: 509px;
-  background-size: 1200px 59px, 459px 353px, 1200px 773px;
+  min-height: 564px;
+  background-size: contain, 459px 353px, 1200px 773px;
+  margin-bottom: 43px;
 
 }
 
@@ -71,17 +72,16 @@ a {
   font-weight: bold;
   color: #000000;
   text-decoration: none;
-  /* width: 140px;  */
   padding-top: 10px;
   padding-bottom: 10px;
   display: block;
   text-align: left;
-  padding-left: 70px;
+  padding-left: 72px;
 
 }
 
 .site-navigation {
- 
+
   display: flex;
   justify-content: space-between;
   padding-left: 0;
@@ -94,7 +94,7 @@ a {
 
 
 .site-navigation li {
-  width: 240px;
+  width: 20%;
 }
 
 .site-navigation li:nth-child(2) {
@@ -103,7 +103,14 @@ a {
 }
 
 .site-navigation li:nth-child(3) {
+
+/* проблема не могу нормально выбрать 3 ссылку и задать ей выравнивание  */
+
+}
+
+.site-navigation a:last-child {
   text-align: right;
+  padding-right: 70px;
 }
 
 
@@ -151,10 +158,11 @@ a {
   font-size: 14px;
   line-height: 26px;
   color: #333333;
+  margin-top: 10px;
 }
 
 .description p:last-child {
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .main-advantages .advantages {
@@ -182,15 +190,16 @@ a {
   display: flex;
 }
 
-
-
-
 .additional li {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 40px;
   width: 320px;
+}
+
+.additional h3 {
+  margin-top: 122px;
 }
 
 .index-true,
@@ -203,10 +212,12 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 25px;
 }
 
 .index-true h3 {
   width: 140px;
+  margin-top: 20px;
 
 }
 
@@ -214,13 +225,33 @@ a {
   width: 285px;
 }
 
+.accommodation {
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: center 58px;
+}
+
 .accommodation p {
   width: 252px;
+  margin-top: 0;
+}
+
+.food {
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: center 58px;
 }
 
 .food p {
   width: 286px;
-  }
+}
+
+.souvenir {
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: center 58px;
+}
+
 
 .souvenir p {
   width: 273px;
