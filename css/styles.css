@@ -102,8 +102,9 @@ a {
   text-align: left;
 }
 
-.site-navigation li:nth-child(3) {
-
+.site-navigation li:nth-child(3) a {
+text-align: right;
+padding-right: 73px;
 /* проблема не могу нормально выбрать 3 ссылку и задать ей выравнивание  */
 
 }
