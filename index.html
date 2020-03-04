@@ -98,7 +98,7 @@
   <section class="interested">
     <h2>Заинтересовались?</h2>
 
-    <p>Укажите предполагаемые даты&nbsp;поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <p>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
     <button type="button" class="search-button">Поиск гостиницы в Седоне</button>
   </section>
 
@@ -107,7 +107,7 @@
   <section class="search-hotels">
     <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
 
-    <form class="search-form" method="get" action="https://echo.htmlacademy.ru">
+    <form class="search-form" method="post" action="https://echo.htmlacademy.ru">
       <div class="container-date">
         <label for="arrival day">Дата заезда:</label>
         <input type="text" name="arrival day" id="arrival day" placeholder="24 апреля 2017">
@@ -127,18 +127,18 @@
         </button>
       </div>
       <div class="search-form-guests">
-        <div class="container-adults">
+        
           <label for="adults">Взрослые:</label>
           <button class="search-form-minus" type="button">-</button>
           <input type="number" name="adults" id="adults" value="2" min="1" max="5" step="1">
           <button class="search-form-plus"type="button">+</button>
-        </div>
-        <div class="container-kids">
+        
+        
           <label for="kids">Дети:</label>
           <button class="search-form-minus" type="button">-</button>
           <input type="number" name="kids" id="kids" value="0" min="0" max="5" step="1"/>
           <button class="search-form-plus"type="button">+</button>
-        </div>
+        
       </div>
       <button type="submit" class="blue-search-button">Найти</button>
     </form>
