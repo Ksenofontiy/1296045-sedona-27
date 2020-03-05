@@ -232,7 +232,7 @@ padding-right: 73px;
 }
 
 .accommodation p {
-  width: 252px;
+  width: 352px;
   margin-top: 0;
 }
 
@@ -243,7 +243,7 @@ padding-right: 73px;
 }
 
 .food p {
-  width: 286px;
+  width: 326px;
   margin-top: 0;
 }
 
@@ -255,7 +255,7 @@ padding-right: 73px;
 
 
 .souvenir p {
-  width: 273px;
+  width: 326px;
   margin-top: 0;
 }
 
@@ -468,12 +468,24 @@ li h3 {                  /*подумать с чем объединить*/
 
 /*Подвал*/
 .page-footer {
+  padding-top: 36px;
+  padding-bottom: 13px;
+  margin-top: -84px;
+  position: relative;
+  z-index: 111;
   background-color: rgba(225, 225, 225, 0.9);
-
   width: 100%;
-  }
+}
+
+.contacts {
+  margin: 0;
+  width: 300px;
+}
+
 
 .contacts p {
+  margin: 0; 
+  margin-top: 3px;
   text-transform: uppercase;
   font-size: 21px;
   font-weight: bold;
@@ -481,20 +493,19 @@ li h3 {                  /*подумать с чем объединить*/
   color: #000000;
 }
 
-.copyright p {
-  font-size: 14px;
-  vertical-align: middle;
-  font-weight: normal;
-  box-shadow: 0px 5px 15px 0 var(--dark-forest-green-20);
+.contacts p:last-child {
+  margin-top: 16px;
 }
 
+
 .social-networks {
+  width: 150px;
+  margin:0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 150px;
-  margin-left: -50px;
-
+  align-items: center;
+ 
 }
 
 .social-link {
@@ -532,32 +543,22 @@ justify-content: space-around;
 width: 1200px;
 }
 
-.contacts {
-  margin: 0;
-  min-height: 120px;
-  width: 300px;
-
-}
-
-.social-networks {
-  margin: 0;
-  padding: 0;
-  min-height: 120px;
-  width: 300px;
-  justify-content: center;
-  align-items: center;
-
-}
 
 .copyright {
-  margin: 0;
-  min-height: 120px;
+  text-align: right;
+  margin-top: 3px;
+  /* margin: 0; */
   width: 300px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
 
  }
+
+ .copyright p {
+  
+  font-size: 14px;
+  vertical-align: middle;
+  font-weight: normal;
+  box-shadow: 0px 5px 15px 0 var(--dark-forest-green-20);
+}
 
  /* страница отелей */
 
