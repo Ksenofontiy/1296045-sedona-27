@@ -677,6 +677,7 @@ width: 1200px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-right: 70px;
+  border-bottom: 1px solid #81b3d2;
 
 }
 .sorting h3 {
@@ -744,12 +745,12 @@ a.list-sorting-active-link {
 
 /*список отелей*/
 .hotel-name {
-  font-size: 21px;
-  letter-spacing: normal;
+  margin: 0;
+  /* font-size: 21px; */
+  /* letter-spacing: normal; */
   text-align: left;
-  width: 310px;
-
-  color: #000000;
+  /* width: 310px; */
+  /* color: #000000; */
 }
 
 .hotel-name:focus,
@@ -776,14 +777,18 @@ a.list-sorting-active-link {
 }
 .column-2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: start;
 }
 
 .column-2 p{
   margin-top: 6px;
   margin-bottom: 7px;
-  margin-right: 75px;
+
+}
+
+.column-2 p:last-child {
+  margin-right: 125px;
 }
 
 .column-2 div {
@@ -792,16 +797,15 @@ a.list-sorting-active-link {
 }
 
 
-.border {
-  border-top: 1px solid #81b3d2;
-}
+/* .border {
+  
+} */
 
 .hotel-list article{
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 30px 70px;
-
   border-bottom: 1px solid #81b3d2;
 }
 
@@ -818,15 +822,43 @@ a.list-sorting-active-link {
   align-self: flex-end;
   margin: 0px;
   padding-right: 13px;
-
-
   line-height: 21px;
   font-weight: 400;
   text-align: right;
   color: #666666;
-
   background-color: #f2f2f2;
 }
+
+.four-stars {
+  width: 85px;
+  height: 17px;
+  background-image: url(../img/star.svg);
+  background-size: 18px;
+  background-repeat: space;
+  margin-bottom: 66px;
+  margin-right: 10px;
+}
+
+.three-stars {
+  width: 60px;
+  height: 17px;
+  background-image: url(../img/star.svg);
+  background-size: 18px;
+  background-repeat: space;
+  margin-bottom: 66px;
+  margin-right: 10px;
+}
+
+.two-stars {
+  width: 38px;
+  height: 17px;
+  background-image: url(../img/star.svg);
+  background-size: 18px;
+  background-repeat: space;
+  margin-bottom: 66px;
+  margin-right: 10px;
+}
+
 
 .button-hotel-detail {
 
@@ -834,9 +866,7 @@ a.list-sorting-active-link {
   padding-top: 8px;
   padding-right: 17px;
   padding-left: 17px;
-  margin-right: 30px;
-
-
+  margin-right: 6px;
   line-height: 21px;
   letter-spacing: normal;
   color: #ffffff;
@@ -865,8 +895,7 @@ a.list-sorting-active-link {
   padding-top: 8px;
   padding-right: 17px;
   padding-left: 17px;
-
-
+  margin-right: 50px;
   background-color: #766357;
 }
 
