@@ -547,17 +547,19 @@ width: 1200px;
 .copyright {
   text-align: right;
   margin-top: 3px;
-  /* margin: 0; */
   width: 300px;
 
- }
+}
 
- .copyright p {
-  
+.copyright p {
   font-size: 14px;
   vertical-align: middle;
   font-weight: normal;
   box-shadow: 0px 5px 15px 0 var(--dark-forest-green-20);
+}
+
+.copyright a {
+  vertical-align: middle;
 }
 
  /* страница отелей */
@@ -674,8 +676,8 @@ width: 1200px;
   justify-content: space-between;
   align-items: center;
   padding-left: 72px;
-  padding-top: 31px;
-  padding-bottom: 33px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-right: 73px;
   border-bottom: 1px solid #81b3d2;
 
@@ -766,6 +768,10 @@ width: 1200px;
 
 .hotel-name:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.hotel-list {
+  margin-bottom: 85px;
 }
 
 .hotel-list p {
@@ -917,6 +923,6 @@ width: 1200px;
   background-color: #503e33;
 }
 
-article:last-of-type {
+/* article:last-of-type {
   margin-bottom: 85px;
-}
+} */
